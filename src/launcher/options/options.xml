@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+
+<options>
+	<Game>
+		<boolean name="instantfights" title="Instant Fights" description="Enable the option to fight as soon as two fighters are on the ice" default="0"></boolean>
+		<input name="fightspergame" title="Fights Per Game" description="Maximum fights in a game" default="3" type="number" />
+    </Game>
+	<Display>
+        <boolean name="drawfps" title="Display FPS" description="Toggle the display of frames per second" default="0"></boolean>
+		<list name="fpsupdate" title="FPS Update Interval" description="The rate at which the FPS display is visually updated" default="0">
+			<listitem value="1">Per Second</listitem>
+			<listitem value="2">Per Frame</listitem>
+		</list>
+        <list name="screenshotformat" title="Screenshot Format" description="The image format of screenshots" default="0" >
+            <listitem value="0">BMP</listitem>
+			<listitem value="1">JPEG</listitem>
+			<listitem value="2">PNG</listitem>
+            <listitem value="3">DDS</listitem>
+        </list>
+    </Display>
+	<Graphics>
+        <boolean name="animatedupperads" title="Animated Upper Ads" description="Toggle rendering animated upper ads" default="1"></boolean>
+		<boolean name="animateduppercrowd" title="Animated Upper Crowd" description="Toggle rendering a basic animation effect on the upper crowd" default="1"></boolean>
+        <input name="crowdlod" title="Crowd LOD" description="A higher value reduces the crowd LOD closer to the camera" default="10000" type="integer"  />
+        <boolean name="puckshadow" title="Puck Shadow" description="Toggle rendering the puck shadow" default="1"></boolean>
+        <input name="puckshadowsize" title="Puck Shadow Size" description="The size of the puck shadow" default="50.00" type="number"  />
+        <boolean name="playershadows" title="Player Shadows" description="Toggle rendering player shadows" default="1"></boolean>
+        <input name="playershadowoffset" title="Player Shadow Offset" description="The offset of the player shadows" default="0.1" type="number" />
+        <color bits="32" name="playershadowcolor" title="Player Shadow Color" description="The color of the player shadows" default="rgba(0,0,77,0.25)" />
+        <boolean name="playerreflections" title="Player Reflections" description="Toggle rendering of player reflections" default="1"></boolean>
+		<boolean name="arenalitehd" title="Dynasty Arena Lite HD Textures" description="Toggle injecting HD textures for Dynasty's Arena Lite" default="1"></boolean>
+    </Graphics>
+    <Sound>
+        <boolean name="enableditties" title="Ditty Engine" description="Toggle the new ditty engine" default="1"></boolean>        
+        <boolean name="preloadditties" title="Preload dities" description="Enumerate list of ditties during loading" default="1"></boolean>        
+        <boolean name="aremamusicslider" title="Arenic Music Slider" description="Use music slider for arena music volume" default="1"></boolean>
+        <boolean name="menumusicslider" title="Menu Music Slider" description="Use music slider for menu music volume" default="1"></boolean>
+        <boolean name="interfacemusicslider" title="Interface Menu Slider" description="Use music slider for interface music volume" default="1"></boolean>
+        <boolean name="menumusicinreplay" title="Play Menu Music In Replay" description="Whether or not to play menu music in replay mode" default="0"></boolean>
+        <input name="dittyfadeouttime" title="Fade out time" description="Time in milliseconds for arena music fade out" default="1000" type="number" />
+    </Sound>
+    <Physics>
+        <input name="puckgravity" title="Puck Gravity" description = "The gravity of the puck" default="2.5" type="number" />
+        <input name="puckelasticity" title="Puck Elasticity" description = "The elasticity (bounciness) of the puck" default="0.25" type="number" />
+        <input name="playerspeedmulti" title="Player Speed Multiplier" description = "Overall player speed multiplier" default="0.62" type="number" />
+        <input name="homeplayerspeedmulti" title="Home Player Speed Multiplier" description = "Player speed multiplier for the home team" default="1.0" type="number" />
+        <input name="awayplayerspeedmulti" title="Away Player Speed Multiplier" description = "Player speed multiplier for the away team" default="1.0" type="number" />
+        <input name="playerbasespeed" title="Player Base Speed" description = "Base player speed modifier" default="40.0" type="number" />
+        <input name="playerupperspeed" title="Player Upper Speed" description = "This value is added to the base player speed" default="20.0" type="number" />
+        <input name="basepassspeed" title="Base Pass Speed" description = "Base pass speed modifier" default="92.00" type="number" />
+        <input name="upperpassspeed" title="Upper Pass Speed" description = "This value is added to the base pass speed" default="75.00" type="number" />
+        <input name="saucerpassspeedmulti" title="Saucer Pass Speed Multiplier" description = "Speed multiplier for saucer pass" default="0.8" type="number" />
+        <input name="goaliepassspeedmulti" title="Goalie Pass Speed Multiplier" description = "Speed multiplier for goalie pass" default="0.95" type="number" />
+        <input name="playerspeedenergymulti" title="Player Speed Energy Multiplyer" description = "The value that the player's energy is multiplied with to help determine speed" default="0.000244140625" type="number" />
+    </Physics>
+    <Arena>
+        <input name="icelength" title="Ice Length" description = "The length of the (ice in game units)" default="4800.00" type="number" />
+        <input name="icewidth" title="Ice Width" description = "The width of the ice (in game units)" default="2040.00" type="number" />
+        <input name="bluelineposition" title="Blue Line Position" description = "Position of the blue line" default="1316.00" type="number" />
+        <input name="goallineposition" title="Goal Line Position" description = "Position of the goal line" default="4176.00" type="number" />
+    </Arena>
+    <Interface>
+        <input name="pointswin" title="Points: Win" description="Points awarded for winning a game" default="2" type="integer" />
+		<input name="pointswinot"  title="Points: Win OT" description="Points awarded for winning a game in OT" default="2"  type="integer" />
+		<input name="pointsloseot"  title="Points: Lose OT" description="Points awarded for losing a game in OT" default="1"  type="integer" />
+		<input name="pointstie" title="Points - Tie" description="Points awarded for a tie game" default="1"  type="integer" />  
+    </Interface>
+</options>
