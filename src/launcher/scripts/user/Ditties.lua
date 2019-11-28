@@ -56,18 +56,18 @@ MenuRepeat = true
 MenuMusicInReplay = Launcher.Config.Bool("menumusicinreplay",false)
 PreloadDitties = Launcher.Config.Bool("preloadditties",true)
 
-BASS_DX8_I3DL2REVERB_lRoom = 0
-BASS_DX8_I3DL2REVERB_lRoomHF = -100
-BASS_DX8_I3DL2REVERB_flRoomRolloffFactor = 0
-BASS_DX8_I3DL2REVERB_flDecayTime = 2.49
-BASS_DX8_I3DL2REVERB_flDecayHFRatio = 0.83
-BASS_DX8_I3DL2REVERB_lReflections = -2602
+BASS_DX8_I3DL2REVERB_lRoom = -10
+BASS_DX8_I3DL2REVERB_lRoomHF = 0
+BASS_DX8_I3DL2REVERB_flRoomRolloffFactor = 0.000
+BASS_DX8_I3DL2REVERB_flDecayTime = 0.755
+BASS_DX8_I3DL2REVERB_flDecayHFRatio = 0.500
+BASS_DX8_I3DL2REVERB_lReflections = -2048
 BASS_DX8_I3DL2REVERB_flReflectionsDelay = 0.007
-BASS_DX8_I3DL2REVERB_lReverb = 250
-BASS_DX8_I3DL2REVERB_flReverbDelay = 0.011
-BASS_DX8_I3DL2REVERB_flDiffusion = 100
-BASS_DX8_I3DL2REVERB_flDensity = 100
-BASS_DX8_I3DL2REVERB_flHFReference = 5000
+BASS_DX8_I3DL2REVERB_lReverb = 92
+BASS_DX8_I3DL2REVERB_flReverbDelay = 0.095
+BASS_DX8_I3DL2REVERB_flDiffusion = 15.500
+BASS_DX8_I3DL2REVERB_flDensity = 35.500
+BASS_DX8_I3DL2REVERB_flHFReference = 8192.000
   
   
   --[[
