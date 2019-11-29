@@ -3,13 +3,13 @@
 <list>
   <mod>
     <name>NHL 04 Rebuilt</name>
-    <shortdescription>A full modern full conversion mod for NHL 04</shortdescription>
+    <shortdescription>A modern full conversion mod for NHL 2004.</shortdescription>
     <creator>Community</creator>
     <id>04rebuilt</id>
-    <version>1.2</version>
+    <version>1.21</version>
     <dependency>launcherlibs</dependency>
     <dependency>launchersystem</dependency>
-    <checksum>ec3eaa5285822d837e4333c123517b68384af2a08b4ff7f9de066b1d74cf2193</checksum>
+    <checksum>9d984e3d1f3b6d86ab45ae5dcf917a4aae471780c7194b8e4a38006525f2cadf</checksum>
     <file>04 Rebuilt.zip</file>
   </mod>
   <mod>
