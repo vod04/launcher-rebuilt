@@ -6,10 +6,10 @@
     <shortdescription>A modern full conversion mod for NHL 2004.</shortdescription>
     <creator>Community</creator>
     <id>04rebuilt</id>
-    <version>1.21</version>
+    <version>1.22</version>
     <dependency>launcherlibs</dependency>
     <dependency>launchersystem</dependency>
-    <checksum>9d984e3d1f3b6d86ab45ae5dcf917a4aae471780c7194b8e4a38006525f2cadf</checksum>
+    <checksum>7d1288d528ab455ecaca27c297b54e36221440cc1955a1de2ba9ba17ead2bebd</checksum>
     <file>04 Rebuilt.zip</file>
   </mod>
   <mod>

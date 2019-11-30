@@ -19,6 +19,7 @@
 	<Game>
 		<boolean name="instantfights" title="Instant Fights" description="Enable the option to fight as soon as two fighters are on the ice" default="0"></boolean>
 		<input name="fightspergame" title="Fights Per Game" description="Maximum fights in a game" default="3" type="number" />
+		<input name="goalreplays" title="Goal Replays" description="The amount of times to display a goal replay" default="1" type="integer"></input>
     </Game>
 	<Display>
         <boolean name="drawfps" title="Display FPS" description="Toggle the display of frames per second" default="0"></boolean>

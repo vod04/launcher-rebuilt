@@ -1,9 +1,9 @@
 <mod>
     <name>NHL 04 Rebuilt</name>
-    <shortdescription>A full modern full conversion mod for NHL 04</shortdescription>
+    <shortdescription>A modern full conversion mod for NHL 2004.</shortdescription>
     <creator>Community</creator>
     <id>04rebuilt</id>
-    <version>1</version>
+    <version>1.22</version>
     <dependency>launcherlibs</dependency>
     <dependency>launchersystem</dependency>
 </mod>
