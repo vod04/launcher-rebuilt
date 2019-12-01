@@ -37,6 +37,8 @@
 	<Graphics>
         <boolean name="animatedupperads" title="Animated Upper Ads" description="Toggle rendering animated upper ads" default="1"></boolean>
 		<boolean name="animateduppercrowd" title="Animated Upper Crowd" description="Toggle rendering a basic animation effect on the upper crowd" default="1"></boolean>
+		<input name="cutscenefovmin" title="Min Cutscene FOV Modifier" description="Sets the minimum FOV modifier for cutscenes" default="0" type="integer"></input>
+        <input name="cutscenefovmax" title="Max Cutscene FOV Modifier" description="Sets the maximum FOV modifier for cutscenes" default="0" type="integer"></input>
         <input name="crowdlod" title="Crowd LOD" description="A higher value reduces the crowd LOD closer to the camera" default="10000" type="integer"  />
         <boolean name="puckshadow" title="Puck Shadow" description="Toggle rendering the puck shadow" default="1"></boolean>
         <input name="puckshadowsize" title="Puck Shadow Size" description="The size of the puck shadow" default="50.00" type="number"  />
