@@ -3,7 +3,7 @@
     <shortdescription>A modern full conversion mod for NHL 2004.</shortdescription>
     <creator>Community</creator>
     <id>04rebuilt</id>
-    <version>1.24</version>
+    <version>1.25</version>
     <dependency>launcherlibs</dependency>
     <dependency>launchersystem</dependency>
 </mod>
