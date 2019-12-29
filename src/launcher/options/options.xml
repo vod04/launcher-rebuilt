@@ -94,4 +94,8 @@
         <boolean name="menumusicinreplay" title="Play Menu Music In Replay" description="Whether or not to play menu music in replay mode" default="0"></boolean>
         <input name="dittyfadeouttime" title="Fade out time" description="Time in milliseconds for arena music fade out" default="1000" type="number" />
     </Sound>
+	<Misc>
+		<boolean name="creategamelog" title="Enable Game Logging" description="Logs detailed gameplay information to 'Game Log.txt'. This includes goals, penalties etc." default="0"></boolean>
+        <boolean name="newgamelog" title="Multiple Game Logs" description="Add a number at the end of the game log filename so it is not overwritten every game." default="0"></boolean>
+    </Misc>
 </options>
