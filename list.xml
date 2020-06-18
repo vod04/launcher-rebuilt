@@ -16,11 +16,11 @@
     <name>Default Libraries</name>
     <shortdescription>Default launcher libraries</shortdescription>
     <creator>Vod</creator>
-    <version>2.44</version>
+    <version>2.45</version>
     <required/>
     <id>launcherlibs</id>
     <launcherversion>2</launcherversion>
-    <checksum>a7881e96d6be36ee47012ec5c115e65ee6a8840bd2c8fae24a7c331583fa2726</checksum>
+    <checksum>89598accd9e4ab7754e2101a77e6d5de125dc2234be34176780b2a508968443c</checksum>
     <file>Libraries.zip</file>
   </mod>
   <mod>
