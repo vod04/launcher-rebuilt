@@ -12,30 +12,33 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
+function Set(Name, Function, ConfigFunction)
+	local Val
+	Val = ConfigFunction(Name,-1)
+	if Val ~= -1 then
+		Function(Val)
+	end
+end
 function LoadingCompleteCallback()
-	Launcher.Physics.SetPuckGravity(Launcher.Config.Number("puckgravity",2.5))
-    Launcher.Physics.SetPuckElasticity(Launcher.Config.Number("puckelasticity",0.25))
-    Launcher.Physics.SetPlayerBaseSpeed(Launcher.Config.Number("playerbasespeed",40))
-    Launcher.Physics.SetPlayerUpperSpeed(Launcher.Config.Number("playerupperspeed",20))
-    Launcher.Physics.SetPlayerSpeedMultiplier(Launcher.Config.Number("playerspeedmulti",0.62))
-    Launcher.Physics.SetPlayerSpeedBoostMultiplier(Launcher.Config.Number("playerspeedboostmulti",0.66))
-    Launcher.Physics.SetHomePlayerSpeedMultiplier(Launcher.Config.Number("homeplayerspeedmulti",1))
-    Launcher.Physics.SetAwayPlayerSpeedMultiplier(Launcher.Config.Number("awayplayerspeedmulti",1))
-    Launcher.Physics.SetPassBaseSpeed(Launcher.Config.Number("passbasespeed",92))
-    Launcher.Physics.SetPassUpperSpeed(Launcher.Config.Number("passupperspeed",75))
-    Launcher.Physics.SetGoaliePassSpeedMultiplier(Launcher.Config.Number("goaliepassspeedmulti",0.95))
-    Launcher.Physics.SetSaucerPassSpeedMultiplier(Launcher.Config.Number("saucerpassspeedmulti",0.8))
-    
-    
-    Launcher.Physics.SetPlayerSpeedEnergyMultiplier(Launcher.Config.Number("playerspeedenergymulti",0.000244140625))
-    
-    Launcher.Arena.SetBlueLinePosition(Launcher.Config.Number("bluelineposition",1316.00))
-    Launcher.Arena.SetGoalLinePosition(Launcher.Config.Number("goallineposition",4176.00))
-
-    Launcher.Arena.SetIceWidth(Launcher.Config.Number("icewidth",2040.00))
-    Launcher.Arena.SetIceLength(Launcher.Config.Number("icelength",4800.00))
-
+	Set("puckgravity",Launcher.Physics.SetPuckGravity,Launcher.Config.Number)
+	Set("puckbouncefriction",Launcher.Physics.SetPuckBounceFriction,Launcher.Config.Number)
+	Set("puckboardfriction",Launcher.Physics.SetPuckBoardFriction,Launcher.Config.Number)
+	Set("puckboardbouncefriction",Launcher.Physics.SetPuckBoardBounceFriction,Launcher.Config.Number)
+	Set("playerbasespeed",Launcher.Physics.SetPlayerBaseSpeed,Launcher.Config.Number)
+	Set("playerupperspeed",Launcher.Physics.SetPlayerUpperSpeed,Launcher.Config.Number)
+	Set("playerspeedmulti",Launcher.Physics.SetPlayerSpeedMultiplier,Launcher.Config.Number)
+	Set("playerspeedboostmulti",Launcher.Physics.SetPlayerSpeedBoostMultiplier,Launcher.Config.Number)
+	Set("homeplayerspeedmulti",Launcher.Physics.SetHomePlayerSpeedMultiplier,Launcher.Config.Number)
+	Set("awayplayerspeedmulti",Launcher.Physics.SetAwayPlayerSpeedMultiplier,Launcher.Config.Number)
+	Set("passbasespeed",Launcher.Physics.SetPassBaseSpeed,Launcher.Config.Number)
+	Set("passupperspeed",Launcher.Physics.SetPassUpperSpeed,Launcher.Config.Number)
+	Set("goaliepassspeedmulti",Launcher.Physics.SetGoaliePassSpeedMultiplier,Launcher.Config.Number)
+	Set("saucerpassspeedmulti",Launcher.Physics.SetSaucerPassSpeedMultiplier,Launcher.Config.Number)
+	Set("playerspeedenergymulti",Launcher.Physics.SetPlayerSpeedEnergyMultiplier,Launcher.Config.Number)
+	Set("bluelineposition",Launcher.Arena.SetBlueLinePosition,Launcher.Config.Number)
+	Set("goallineposition",Launcher.Arena.SetGoalLinePosition,Launcher.Config.Number)
+	Set("icewidth",Launcher.Arena.SetIceWidth,Launcher.Config.Number)
+	Set("icelength",Launcher.Arena.SetIceLength,Launcher.Config.Number)
     
     Launcher.Graphics.EnablePuckShadow(Launcher.Config.Bool("puckshadow",true))
     Launcher.Graphics.SetPuckShadowSize(Launcher.Config.Number("puckshadowsize",50))

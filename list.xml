@@ -6,21 +6,21 @@
     <shortdescription>A modern full conversion mod for NHL 2004.</shortdescription>
     <creator>Community</creator>
     <id>04rebuilt</id>
-    <version>1.26</version>
+    <version>1.27</version>
     <dependency>launcherlibs</dependency>
     <dependency>launchersystem</dependency>
-    <checksum>407cb6e2703007be3cc8ca37ea901f8b07748a1a761c14f6bc37c6b1668b2db1</checksum>
+    <checksum>b00668a4d01d467b925e0bc7c7ddfcec773f72caf50db4f8b846121cef035b46</checksum>
     <file>04 Rebuilt.zip</file>
   </mod>
   <mod>
     <name>Default Libraries</name>
     <shortdescription>Default launcher libraries</shortdescription>
     <creator>Vod</creator>
-    <version>2.45</version>
+    <version>2.46</version>
     <required/>
     <id>launcherlibs</id>
     <launcherversion>2</launcherversion>
-    <checksum>89598accd9e4ab7754e2101a77e6d5de125dc2234be34176780b2a508968443c</checksum>
+    <checksum>bf6918e2234850f29486a8b9b050ce982e3802328d64557d8ecb514f80b80e3e</checksum>
     <file>Libraries.zip</file>
   </mod>
   <mod>
