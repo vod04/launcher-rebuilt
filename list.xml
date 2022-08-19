@@ -2,25 +2,14 @@
 
 <list>
   <mod>
-    <name>NHL 04 Rebuilt</name>
-    <shortdescription>A modern full conversion mod for NHL 2004.</shortdescription>
-    <creator>Community</creator>
-    <id>04rebuilt</id>
-    <version>1.27</version>
-    <dependency>launcherlibs</dependency>
-    <dependency>launchersystem</dependency>
-    <checksum>b00668a4d01d467b925e0bc7c7ddfcec773f72caf50db4f8b846121cef035b46</checksum>
-    <file>04 Rebuilt.zip</file>
-  </mod>
-  <mod>
     <name>Default Libraries</name>
     <shortdescription>Default launcher libraries</shortdescription>
     <creator>Vod</creator>
-    <version>2.48</version>
+    <version>2.52</version>
     <required/>
     <id>launcherlibs</id>
     <launcherversion>2</launcherversion>
-    <checksum>4510682a223787977e2d46c97c98281244a64fefd59de0842a24088952f863b6</checksum>
+    <checksum>42d5c9b8bffb347aa10a4149692f1e7a692dbd19969b49ab3acd583169981da9</checksum>
     <file>Libraries.zip</file>
   </mod>
   <mod>
@@ -29,9 +18,9 @@
     <creator>Vod</creator>
     <required/>
     <id>launchersystem</id>
-    <version>2.14</version>
+    <version>2.16</version>
     <dependency>launcherlibs</dependency>
-    <checksum>14bd429642b4e3280fd38903eab2ad8ec423c98976858db8ae37085a54f3ebac</checksum>
+    <checksum>a2e106c4079fa9369ed9373bb45ee10668a9a4f63426b7d063c687b29c6be08f</checksum>
     <file>System.zip</file>
   </mod>
 </list>
